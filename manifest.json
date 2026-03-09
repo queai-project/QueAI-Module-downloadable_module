@@ -6,7 +6,7 @@
     "documentation_entry_point": "/api/downloadable_plugin/docs",
     "healthcheck_entry_point": "/api/downloadable_plugin/health",
     "version": "5.0.0",
-    "logo": "logo.png",
+    "logo": "logo2.png",
     "description": "This is a downloadable plugin example for QueAI. It demonstrates how to create a plugin that can be easily integrated into the QueAI ecosystem. The plugin provides a simple API endpoint that processes input data and returns a response.",
     "author": "Alejandro Fonseca && Juana Iris",
     "license": "MIT"
