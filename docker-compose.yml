@@ -10,10 +10,13 @@ services:
     labels:
       - "traefik.enable=true"
       # Definimos la ruta de entrada para este plugin
-      - "traefik.http.routers.downloadable_plugin.rule=PathPrefix(`/api/module1`)"
+      - "traefik.http.routers.downloadable_plugin.rule=PathPrefix(`/api/downloadable_plugin`)"
       - "traefik.http.routers.downloadable_plugin.entrypoints=web"
       # Le decimos a Traefik en qué puerto interno escucha FastAPI
       - "traefik.http.services.downloadable_plugin.loadbalancer.server.port=8000"
+    environment:
+      - file=${file:-1}
 networks:
   odoo_network:
     external: true # IMPORTANTE: Le dice que use la red que ya creó el Kernel
+
