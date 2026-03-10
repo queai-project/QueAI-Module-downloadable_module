@@ -24,7 +24,7 @@ app.add_middleware(
 async def process_data(text: str = "mundo"):
     return {
         "status": "success",
-        "result": f"{text.upper()} {  str(os.getenv('archivo'))}.📝",
+        "result": f"{text.upper()} {  str(os.getenv('file'))}.📝",
         "module": "Demo Plugin v1.0"
     }
 
